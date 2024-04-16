@@ -1,0 +1,8 @@
+h3 {
+    color: cadetblue;
+}
+
+table  tr, th, td {
+    border: 5px solid rgb(197, 179, 151);
+    border-radius: 6px;  
+}

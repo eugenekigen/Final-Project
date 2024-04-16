@@ -1,0 +1,25 @@
+h3 {
+    color: darkolivegreen;
+}
+table  th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+div {
+    width: 30%;
+    display: inline-block;
+}
+
+#myHeader {
+    background-color: aquamarine; 
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+.city{
+    background-color: rgb(29, 98, 228);
+    color: blanchedalmond;
+    padding: 10px;
+}

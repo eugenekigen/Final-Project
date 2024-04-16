@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <ul class="nav">
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">ARTISTS</a></li>
+            <li><a href="#">MUSIC</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="left-col">
+            <h1>My <br>PLAYLIST</h1>
+        </div>
+
+        <div class="right-col">
+
+            <p>Click here to Listen</p>
+
+            <img src="play.png" id="icon">
+        </div>
+    </div>
+
+    <audio id="mysound">
+        <source src="Blueface feat. Cardi B & YG - Thotiana (Remix Clean) Lyrics.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        let mysound = document.getElementById("mysound");
+        let icon = document.getElementById("icon");
+
+        // Creating a function that will change pause to play and vice-versa
+        icon.onclick = function () {
+            if (mysound.paused) {
+
+        // If paused then play the music and change the image
+        mysound.play();
+        icon.src = "pause.jpg";
+          } else {
+
+        //If playing then pause the music and change the image
+        mysound.pause();
+        icon.src = "play.png";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

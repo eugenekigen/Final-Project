@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>My First Javascript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML =Date()">
+        Click Me to display the Date and Time
+    </button>
+    <p id="demo"></p>
+    <h2>Light Bulb</h2>
+    <button onclick="document.getElementById('bulb').src='bulbon.gif'">
+        Turn on the Lights
+    </button>
+    <img id="bulb" src="bulboff.gif" style="width: 100px;">
+    <button onclick="document.getElementById('bulb').src='bulboff.gif'"> 
+        Turn off the Lights
+    </button>
+    <h2>Calculate</h2>
+    <p id="demo1"></p>
+    <script>
+        document.getElementById('demo1').innerHTML = 72 + 11;
+    </script>
+    <script>
+        console.log(79 + 25);
+    </script>
+    <button onclick="window.print()">
+        Congratulations For learning Javascript
+    </button>
+    <p id="demo2"></p>
+    <script>
+        /*document.getElementById('demo2').innerHTML = 
+        "Hello Eugene!"*/
+    </script>
+
+    <h2>Javascript Variables</h2>
+    <p id="variables"></p>
+    <script>
+        x = 7;
+        y = 8;
+        z = x + y;
+        document.getElementById("variables").innerHTML = "The value of z is:" + z;
+    </script>
+    <p id="option2"></p>
+    <script>
+        var a = 17;
+        var b = 15;
+        var c = a + b;
+        document.getElementById("option2").innerHTML = "The value of c is:" + c;  
+    </script>
+    <p id="option4"></p>
+    <script>
+        let w = 4 + 6 + "6";
+        document.getElementById("option4").innerHTML =w;
+    </script>
+    <p id="option3"></p>
+    <script>
+        let d = 20;
+        let e = 37;
+        let f = d + e;
+        document.getElementById("option3").innerHTML ="The value of f is:" + f;
+    </script>
+    <p id="string"></p>
+    <script>
+        let name = "Eugene" + " " + "Kiplagat";
+        document.getElementById("string").innerHTML = "My name is : " + name;
+    </script>
+    <p id="Multiplication"></p>
+    <script>
+        var g = 34;
+        var h = 13;
+        var i = g * h;
+        document.getElementById("Multiplication").innerHTML = "The value of i is:" + i;
+    </script>
+    <p id="Division"></p>
+    <script>
+        var j = 100;
+        var k = 50;
+        var l = j / k
+        document.getElementById("Division").innerHTML = "The value of l is:" + l
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

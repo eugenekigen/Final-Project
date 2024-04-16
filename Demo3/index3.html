@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+</head>
+<body>
+    <p>Array index are zero-based, which means the first item is [0].</p>
+    <p id="arrays"></p>  
+    <script>
+         const cars = ["Toyota", "Subaru", "Mercedes"];
+         document.getElementById("arrays").innerHTML = cars[0]  
+    </script>
+
+    <p id="objects"></p>
+    <script>
+        const person = {
+            fisrtName : "Eugene",
+            lastName : "Kiplagat",
+            age : 23,
+            Eyecolor : "Black",
+            Gender : "Male"
+        };
+        document.getElementById("objects").innerHTML = person.fisrtName  +  person.lastName + " is " + person.age + " years old. Has " +  person.Eyecolor + " eyes and is " +  person.Gender ;
+        </script>
+
+        <p>Call a function which performs a calculation and returns the result:</p>
+        <p id="function"></p>
+        <script>
+            function multiplication(m1, m2) {
+                return m1 * m2;
+            }
+            let result = multiplication(7, 3);
+            document.getElementById("function").innerHTML = "The multiplication of 7 and 3 is " + result;
+        </script>
+        <p id="function2"></p>
+        <script>
+            function addition(a1, a2) {
+                return a1 + a2;
+            }
+            let results = addition(5, 7);
+            document.getElementById("function2").innerHTML = "The addition of 5 and 7 is " + results;
+        </script>
+        <p id="function3"></p>
+        <script>
+            function subtraction(s1, s2) {
+                return s1 - s2;
+            }
+            let answer = subtraction(25, 15);
+            document.getElementById("function3").innerHTML = "The subtraction of 25 and 15 is " + answer
+        </script>
+        <p id="function4"></p>
+        <script>
+            function division(d1, d2) {
+                return d1 / d2;
+            }
+            let value = division(55, 5);
+            document.getElementById("function4").innerHTML = "The division of 55 and 5 is " + value
+        </script>
+        <p id="function5"></p>
+        <script>
+            function multiplication(m5, m6) {
+                return m5 * m6
+            }
+            let values = multiplication(5, 7);
+            document.getElementById("function5").innerHTML = "The multiplication of 5 and 7 is " + values
+        </script>
+</body>
+</html>
